@@ -69,6 +69,17 @@
 				}
 			}
 
+                        $style .= '/* Customizations */
+
+#main .post-content .invite-scroll {
+  padding: 0 0.5em;
+  font-size: 3em;
+}
+
+#main .post-content .invite-scroll:hover {
+  transform: scale(1.1);
+}';
+
 			echo $style . '</style>';
 		?>
 	</head>

@@ -99,7 +99,9 @@
 						<li>
 							<a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a>
 						</li><li>
-							<a href="<?php echo esc_url( 'http://felynx.com/' ); ?>"><?php printf( __( 'Design: %s', 'felynxforest' ), 'Felynx Forest' ); ?></a>
+							<a href="/wp-login.php">Site admin</a>
+						</li><li>
+							<a href="http://rootwork.org">Web development: Rootwork.org</a>
 						</li>
 					</ul>
 				</div>

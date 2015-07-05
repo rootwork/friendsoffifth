@@ -29,9 +29,14 @@
 					<?php the_title(); ?>
 				</a>
 			</h1>
-			<a class="invite-scroll" href="#content-<?php the_ID(); ?>">
-				<i class="fa fa-<?php if(is_page()) echo 'leaf'; else echo 'tree'; ?>"></i>
+			<a class="invite-scroll" href="#content-<?php the_ID(); ?>" title="Skip to the content">
+				<i class="fa fa-<?php if(is_page()) echo 'leaf'; else echo 'leaf'; ?>"></i>
 			</a>
+
+<a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="invite-scroll" title="Share on Facebook"><i class="fa fa-facebook-square"></i></a>
+
+<a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>+<?php the_permalink(); ?>" class="invite-scroll" title="Share on Twitter"><i class="fa fa-twitter-square"></i></a>
+
 			<?php if( is_single() ): the_date( get_option( 'date_format' ), '<time class="post-date" datetime="' . get_the_time('c') . '">', '</time>' ); endif; ?>
 		</header>
 
@@ -64,7 +69,7 @@
 		  			</div>
 				</div>
 			<?php endif; ?>
-			<div class="floral-heart">&#x2766;</div>
+			<div class="floral-heart"><i class="fa fa-users"></i></div>
 			<?php
 				$num_comments = get_comments_number();
 				$comments = '';
