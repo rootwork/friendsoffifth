@@ -81,13 +81,17 @@
 }
 
 #main .post-content header {
-  padding: 10vh 2.5vh 7.5vh;
+  padding: 5vh 2.5vh 7.5vh;
 }
 
 @media screen and (max-width: 600px) { .the-content { padding-top: 13px; } }
 
 blockquote {
   font-style: italic;
+}
+
+.ctct-custom-form {
+  min-width: 200px !important;
 }
 
 ';
