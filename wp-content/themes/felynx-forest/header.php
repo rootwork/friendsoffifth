@@ -72,13 +72,25 @@
                         $style .= '/* Customizations */
 
 #main .post-content .invite-scroll {
-  padding: 0 0.5em;
+  padding: 0 0.25em;
   font-size: 3em;
 }
 
 #main .post-content .invite-scroll:hover {
-  transform: scale(1.1);
-}';
+  transform: scale(1.2) rotate(15deg);
+}
+
+#main .post-content header {
+  padding: 10vh 2.5vh 7.5vh;
+}
+
+@media screen and (max-width: 600px) { .the-content { padding-top: 13px; } }
+
+blockquote {
+  font-style: italic;
+}
+
+';
 
 			echo $style . '</style>';
 		?>
@@ -109,7 +121,7 @@
 					<?php
 						$logo_dark  = get_theme_mod( 'logo_dark' );
 						$logo_light = get_theme_mod( 'logo_light' );
-						$site_title = get_bloginfo( 'name' ); 
+						$site_title = get_bloginfo( 'name' );
 						$link_class = '';
 
 						if ( $logo_dark && $logo_light ) {
@@ -122,7 +134,7 @@
 							$html .= '<img class="dark logo" src="' . esc_url( $logo_dark ) . '" alt="' . esc_attr( $site_title ) . '">';
 						}
 
-						if( $logo_light ) { 
+						if( $logo_light ) {
 							$html .= '<img class="light logo" src="' . esc_url( $logo_light ) . '" alt="' . esc_attr( $site_title ) . '">';
 						}
 
