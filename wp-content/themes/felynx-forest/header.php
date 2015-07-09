@@ -86,12 +86,20 @@
 
 @media screen and (max-width: 600px) { .the-content { padding-top: 13px; } }
 
+.the-content > :first-child:first-letter {
+  margin-top: -0.05em;
+}
+
 blockquote {
   font-style: italic;
 }
 
 .ctct-custom-form {
   min-width: 200px !important;
+}
+
+#text-3 {
+  padding-top: 0;
 }
 
 ';
